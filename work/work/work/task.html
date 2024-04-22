@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,100&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #F8F8F8;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* To ensure the navbar stays on top of other content */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Space out elements horizontally between container */
+    align-items: center; /* Vertically center elements within container */
+}
+
+.logo {
+    flex-grow: 0; /* Ensures logo stays fixed size and doesn't grow to fill container */
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #A6A6A6;
+}
+
+nav a:visited{
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-toggle {
+    display: none; /* Hide hamburger menu on larger screens */
+    padding: 10px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+.cart-icon {
+    margin-left: 20px;
+    color: #333;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    flex-grow: 0;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.search-bar {
+    display: flex;
+    margin-right: 20px;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    flex-grow: 1; /* Allow search input to grow and fill available space */
+    margin-right: 5px;
+}
+
+.search-bar button {
+    padding: 5px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.cart-icon {
+    margin-left: 20px;
+    color: #333;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.hero {
+    background-image: url("Rectangle 14.jpg"); /* Replace "hero.jpg" with your image path */
+    background-size: cover; /* Ensures image covers the entire section */
+    background-position: center; /* Centers the image horizontally and vertically */
+    padding: 100px 0; /* Adjust padding as needed */
+    color: #fff; /* Text color for elements within the hero section */
+    text-align: center; /* Centers text content within the hero section */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative; /* This allows the background rectangle to be positioned behind the text */
+}
+
+.hero h1{
+    margin-bottom: 50px;
+}
+
+.rectangle {
+    position: absolute; /* Ensures the rectangle stays in place behind text on scroll */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ensures rectangle covers entire section */
+    background-color: #58E378B8;
+ /* Change this to your desired green color */
+    opacity: 0.3; /* Add some transparency to the rectangle */
+    z-index: -1; /* Ensures rectangle is positioned behind text content */
+}
+
+.banner-container {
+  width: 1065px; /* Adjust width as needed */
+  height: 120px; /* Adjust height as needed */
+  margin: -40px auto;
+  background-color: #F8F8F8; /* Light gray background color */
+  display: flex; /* Arranges buttons in a row */
+  justify-content: center; /* Evenly distributes buttons */
+  align-items: center; /* Vertically centers buttons */
+  border-radius: 10px;
+}
+
+.banner-btn {
+  color: #6F6F6F;
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none;
+  cursor: pointer;
+  font-weight: bold; /* Bold text */
+  margin: 0px 10px;
+}
+
+.orange-btn {
+  background-color: orange;
+  color: #fff;
+}
+
+.box{
+    background: url("Rectangle 23.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    Width: 508px;
+    height: 306px;
+    margin: 123px 260px; 
+    position: absolute;
+    border-radius: 20px;
+}
+.car img{
+    width: 313px;
+    height: 177px;
+    position: absolute;
+    top: 97px;
+    left: 179px;
+}
+
+.info{
+    color: #fff;
+    margin: 95px 34px;
+}
+
+.info p{
+    width: 206px;
+}
+
+.offer{
+    border-radius: 45px;
+    background-color: #fff;
+    color:  #32508C;
+    width: 75px;
+    height: 75px;
+    top:653px;
+    left:397px;
+    margin: -317px 193px;
+}
+
+.offer h1{
+    text-align: center;
+    margin: 0px 9px;
+}
+
+.boxes{
+    background: url("Rectangle 24.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    Width: 508px;
+    height: 306px;
+    margin: 120px;  
+    position: absolute;
+    border-radius: 20px;
+    margin: 120px 800px;
+} 
+
+.cars{
+    width: 313px;
+    height: 177px;
+    position: absolute;
+    top: 97px;
+    left: 179px;
+} 
+
+.infos{
+    color: #fff;
+    margin: 95px 34px;
+}
+
+.infos h1{
+    color: black;
+}
+
+.infos p{
+    width: 206px;
+    color: black;
+}
+
+.offers{
+    border-radius: 45px;
+    background-color: #fff;
+    color:  #32508C;
+    width: 75px;
+    height: 75px;
+    top:653px;
+    left:397px;
+    margin: -317px 193px;
+}
+
+.offers h1{
+    text-align: center;
+    margin: 0px 9px;
+    color: black;
+}
+
+.offers p{
+    color: black;
+    width: 206px;
+}
+
+.services{
+    margin: 553px 0px;
+}
+
+.details{
+    text-align: center;
+}
+
+.cards{
+    width: 220px;
+    height: 240px;
+    display: flex;
+    margin: 0px 108px;
+}
+
+.card2,.card3{
+    background-color: rgb(229, 244, 254);
+     width: 220px;
+    height: 240px;
+    margin: 36px 21px;
+    padding: 3px 18px;
+}
+
+.card2 h5,.card3 h5{
+    margin: 26px 12px;
+}
+
+.card4,.card5{
+    background-color: rgb(249, 234, 241);
+    width: 220px;
+    height: 240px;
+    margin: 36px 21px;
+    padding: 3px 18px; 
+}
+
+.card4 h5,.card5 h5{
+    margin: 26px 12px;
+}
+
+.about{
+    margin: -263px 0px; 
+}
+
+.about img{
+    width: 900px;
+    height: 496px;
+    align-items: center;
+    justify-content: center;
+    margin: -263px 356px;
+}
+
+.support{
+    margin: 550px 0px;
+}
+
+.containers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1,.container2,.container3{
+    padding: 70px 70px;
+}
+
+.container1 img, .container2 img, .container3 img{
+    width: 60px;
+    height: 56px;
+    margin: 3px 27px;
+}
+
+.testimonials{
+    margin: -356px 0px;
+    text-align: center;
+}
+
+.testimonials img{
+    width: 770px;
+    height: 376px;
+    align-items: center;
+    justify-content: center;
+    margin: -181px 367px;
+}
+
+.last{
+    background-color: #F2F2F2;
+    margin: 650px 0px;
+    min-height: 400px;
+}
+
+.last input[type="text"] {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    flex-grow: 1; 
+    margin: -24px 47px;
+}
+
+.section1 img{
+    margin: 50px 58px;
+}
+
+.socials{
+    margin: 23px 51px;
+}
+
+.fa-brands{
+    padding: 0px 10px;
+}
+
+.links{
+    display: flex;
+    margin: 46px 0px;
+    flex-wrap: wrap;
+}
+
+.section1{
+    display: flex;
+    margin: 0px 200px;
+    flex-wrap: wrap;
+}
+
+.column1 li, .column2 li, .column3 li, .column4 li{
+    list-style: none;
+    padding: 5px 0px;
+}
+
+.column1 a, .column2 a, .column3 a, .column4 a{
+    text-decoration: none;
+    color: #4D4D4D;
+}
+
+.column2{
+    margin: 41px 0px;
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px 0;
+  }
+  
+  .container {
+    flex-wrap: wrap; /* Wrap header elements on mobile */
+  }
+  
+  .logo {
+    margin-bottom: 10px;
+  }
+  
+  .search-bar {
+    margin-right: 0;
+    margin-bottom: 10px; /* Add space between search bar and navigation on mobile */
+    width: 100%; /* Make search bar full width on mobile */
+  }
+  
+  .search-bar input[type="text"] {
+      margin-right: 0; /* Remove margin on mobile */
+  }
+  
+  .container {
+    flex-direction: column; /* Stack elements vertically on mobile */
+  }
+  
+  .logo {
+    margin-bottom: 10px;
+  }
+  
+  nav {
+    flex-direction: column; /* Make navigation stack vertically on mobile */
+    text-align: center; /* Center navigation links */
+    margin-top: 10px; /* Add space between logo and navigation on mobile */
+  }
+  
+  nav li {
+    margin: 10px 0; /* Add space between navigation links on mobile */
+  }
+
+  nav a,
+  .cart-icon {
+      /* Style links and cart icon similarly on mobile */
+      width: 100%;
+      text-align: center;
+  }
+  
+  .nav-toggle {
+    display: block; /* Show hamburger menu on smaller screens */
+  } 
+
+  .hero {
+    padding: 50px 0;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem; /* Adjust heading size for mobile */
+  }
+
+  .banner-container {
+    width: 100%; /* Make banner full width on small screens */
+  }
+  
+  .banner-btn {
+    font-size: 0.8rem; /* Adjust font size for mobile */
+  }
+
+  .services {
+    padding: 20px 0; /* Adjust padding for smaller screens */
+  }
+
+  .card1, .card2, .card3, .card4, .card5 {
+    width: calc(33% - 10px); /* Adjust card width for smaller screens (3 cards per row) */
+  }
+
+  .about img {
+    max-width: 700px; 
+}
+
+.testimonials img {
+    max-width: 100%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .card1, .card2, .card3, .card4, .card5 {
+    width: 100%; /* Make cards full width on very small screens */
+  }
+}
+    </style>
+</head>
+
+    <header>
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="polco1.jpg" alt="Polco Logo">
+            </a>
+            <nav>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul>
+                    <li><a href="https://polcoindia.com/">Home</a></li>
+                    <li><a href="https://polcoindia.com/">Shop by Category</a></li>
+                    <li><a href="https://polcoindia.com/">Car Covers</a></li>
+                    <li><a href="https://polcoindia.com/">Motorcycle Covers</a></li>
+                </ul>
+                <a href="https://polcoindia.com/" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="rectangle"></div>
+            <h1>Buy Car Cover for Your <br> Vehicle in Easy Steps<br> with us.</h1>
+            </div>
+            </section>
+
+            <section class="banner-container">
+                <div class="banner">
+                  <button class="banner-btn">Two Wheeler</button>
+                  <button class="banner-btn orange-btn">Four Wheeler</button>
+                  <button class="banner-btn">Select Brand</button>
+                  <button class="banner-btn">Select Model</button>
+                  <button class="banner-btn orange-btn">Search</button>
+                </div>
+              </section>
+
+              <section class="main">
+           <div class="box">
+            <div class="info">
+                <h1>Harrier</h1>
+                <p>Car Cover</p>
+                <button class="btn1">Festive Offer</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing<br>elit. </p>
+            </div>
+            <div class="car">
+                <img src="car.png" alt="car">
+            </div>
+            <div class="offer"><h1>65%<br>Off</h1></div>
+           </div>
+
+           <div class="boxes">
+            <div class="infos">
+                <h1>Harrier</h1>
+                <p>Car Cover</p>
+                <button class="btn2">Festive Offer</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing<br>elit. </p>
+            </div>
+            <div class="cars">
+                <img src="car.png" alt="car">
+            </div>
+            <div class="offers"><h1>65%<br>Off</h1></div>
+           </div> 
+        </section>  
+
+        <section class="services">
+            <div class="details">
+                <h1>Top Categories</h1>
+                <p>Explore top rated Car Covers, Pool Covers and High quality Truck Curtains from Polco</p>
+            </div>
+            <div class="cards">
+                <div class="card1"><img src="cycle.png"></div>
+                <div class="card2"><h5>Motorcycle<br>Cover</h5><img src="bike.png"></div>
+                <div class="card3"><h5>Bicycle<br>Cover</h5><img src="cyclic.png"></div>
+                <div class="card4"><h5>Auto Rickshaw<br>Cover</h5><img src="auto.png"></div>
+                <div class="card5"><h5>Car Cover</h5><img src="cars.png"></div>
+            </div>
+            </section>
+
+            <section class="about">
+                <img src="about.png" alt="why us" >
+            </section>
+
+            <section class="support">
+                <div class="containers">
+                    <div class="container1"><img src="check.png"><p>Quality Control</p></div>
+                    <div class="container2"><img src="Truck.png"><p>48 Hours Return Policy</p></div>
+                    <div class="container3"><img src="Headset.png"><p>Instant Live Chat</p></div>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <img src="WhatsApp Image 2024-02-12 at 11.23 2.png" alt="testimonials">
+            </section>
+
+            <footer>
+                <div class="last">
+                    <div class="section1">
+                        <div class="imp">
+                        <img src="polco1.jpg" alt="logo"><br>
+                        <input type="text" placeholder="Enter your email address">
+                        <div class="socials">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        </div>
+
+                <div class="links">
+                    <ul class="column1">
+                        <b><li class="shop"></li><a href="#">Shop</a></b></li>
+                        <li><a href="#">Camera</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Wireless speaker</a></li>
+                        <li><a href="#">Pizza Maker</a></li>
+                    </ul>
+
+                    <ul class="column2">
+                        <li><a href="#">Headphones</a></li>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Yoghurt maker</a></li>
+                        <li><a href="#">Icecream Maker</a></li>
+                    </ul>
+
+                    <ul class="column3">
+                        <b><li class="help"><a href="#">Help</a></b></li>
+                        <li><a href="#">Track Your Order</a></li>
+                        <li><a href="#">Warranty and support</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">FAQs</a></li>
+                    </ul>
+
+                    <ul class="column4">
+                        <b><li class="help"><a href="#">Company</a></b></li>
+                        <li><a href="#">About Udrop more</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Read Our Blogs</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Warranty Policy</a></li>
+                    </ul>
+                </div>
+                </div>
+                </div>
+            </footer>
+                
+    </body>
+</html>
+
+    
